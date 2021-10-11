@@ -21,10 +21,10 @@ export default class VsCardGroup extends VsComponent {
       staticClass: 'vs-card__group-prev',
       on: {
         click: (evt: any) => {
-          console.log('paso <')
+          // console.log('paso <')
           const cardsI: any = this.$refs.cards
           // console.dir(cardsI)
-          /* const childrenI: any[] = Array.prototype.slice.call(cardsI.children).reverse()
+          const childrenI: any[] = Array.prototype.slice.call(cardsI.children).reverse()
           let isChanged = false
           let signedCard: any = null
           childrenI.forEach((el) => {
@@ -37,9 +37,13 @@ export default class VsCardGroup extends VsComponent {
                 signedCard = el
               }
             }
-          }) */
-          cardsI.scrollTo(cardsI.scrollLeft - cardsI.clientWidth, 0)
-          // cardsI.scrollRight = window.innerWidth - signedCard.offsetLeft - signedCard.offsetWidth
+          })
+          // cardsI.scrollTo(cardsI.scrollLeft - cardsI.clientWidth, 0)
+          if (!(signedCard === null || signedCard.offsetLeft === null)) {
+            cardsI.scrollLeft = Math.abs(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth)
+          } else {
+            console.log('No se encontraron más tarjetas en paso <')
+          }
         }
       }
     }, [
@@ -50,7 +54,7 @@ export default class VsCardGroup extends VsComponent {
       staticClass: 'vs-card__group-next',
       on: {
         click: (evt: any) => {
-          console.log('paso >')
+          // console.log('paso >')
           const cardsI: any = this.$refs.cards
           // console.dir(cardsI)
           const childrenI: any[] = Array.prototype.slice.call(cardsI.children);
@@ -68,7 +72,11 @@ export default class VsCardGroup extends VsComponent {
             }
           })
           // cardsI.scrollTo(cardsI.scrollLeft + cardsI.clientWidth, 0)
-          cardsI.scrollLeft = signedCard.offsetLeft
+          if (!(signedCard === null || signedCard.offsetLeft === null)) {
+            cardsI.scrollLeft = signedCard.offsetLeft;
+          } else {
+            console.log('No se encontraron más tarjetas en paso >')
+          }
         }
       }
     }, [

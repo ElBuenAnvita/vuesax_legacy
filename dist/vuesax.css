@@ -1,8 +1,8 @@
 /*!
   * Vuesax v4.0.1-alpha.25 🖖 (https://lusaxweb.github.io/vuesax/)
-  * Forged by Luis Daniel Rovira
+  * Forged by Luis Daniel Rovira, edited by ElBuenAnvita
   * Released under the MIT License.
-  * Donate: https://www.patreon.com/bePatron?c=1567892
+  * Donate to Luis Daniel Rovira: https://www.patreon.com/bePatron?c=1567892
   * © 2019, Lusaxweb. (https://lusaxweb.net)
   */
 .vs-button {
@@ -4231,8 +4231,7 @@
   overflow: hidden;
 }
 .vs-dialog-content.blur {
-  -webkit-backdrop-filter: saturate(180%) blur(15px);
-          backdrop-filter: saturate(180%) blur(15px);
+  backdrop-filter: saturate(180%) blur(15px);
 }
 
 .vs-dialog {
@@ -5828,8 +5827,7 @@
   background: rgba(var(--vs-background), 0.8);
   position: absolute;
   bottom: 0px;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   border-radius: 0px 0px 20px 20px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;

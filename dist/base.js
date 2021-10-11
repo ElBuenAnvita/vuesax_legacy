@@ -1,8 +1,8 @@
 /*!
   * Vuesax v4.0.1-alpha.25 🖖 (https://lusaxweb.github.io/vuesax/)
-  * Forged by Luis Daniel Rovira
+  * Forged by Luis Daniel Rovira, edited by ElBuenAnvita
   * Released under the MIT License.
-  * Donate: https://www.patreon.com/bePatron?c=1567892
+  * Donate to Luis Daniel Rovira: https://www.patreon.com/bePatron?c=1567892
   * © 2019, Lusaxweb. (https://lusaxweb.net)
   */
 (function webpackUniversalModuleDefinition(root, factory) {
