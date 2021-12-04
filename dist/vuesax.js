@@ -1,5 +1,5 @@
 /*!
-  * Vuesax v4.0.1-alpha.25 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Vuesax v4.0.1-alpha-e.26 🖖 (https://lusaxweb.github.io/vuesax/)
   * Forged by Luis Daniel Rovira, edited by ElBuenAnvita
   * Released under the MIT License.
   * Donate to Luis Daniel Rovira: https://www.patreon.com/bePatron?c=1567892
@@ -25502,6 +25502,8 @@ function (_VsComponent) {
 
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
             cardsI.scrollLeft = Math.abs(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth);
+            console.log('SignedCard for > below.');
+            console.dir(signedCard);
           } else {
             console.log('No se encontraron más tarjetas en paso <');
           }
@@ -25532,6 +25534,8 @@ function (_VsComponent) {
 
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
             cardsI.scrollLeft = signedCard.offsetLeft;
+            console.log('SignedCard for > below.');
+            console.dir(signedCard);
           } else {
             console.log('No se encontraron más tarjetas en paso >');
           }

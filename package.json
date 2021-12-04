@@ -71,5 +71,16 @@
   },
   "dependencies": {
     "vue-router": "^3.3.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElBuenAnvita/vuesax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElBuenAnvita/vuesax/issues"
+  },
+  "homepage": "https://github.com/ElBuenAnvita/vuesax#readme"
 }
