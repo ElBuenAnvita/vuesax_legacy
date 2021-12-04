@@ -1,5 +1,5 @@
 /*!
-  * Vuesax v4.0.1-alpha-e.27 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Vuesax v4.0.1-alpha-e.28 🖖 (https://lusaxweb.github.io/vuesax/)
   * Forged by Luis Daniel Rovira, edited by ElBuenAnvita
   * Released under the MIT License.
   * Donate to Luis Daniel Rovira: https://www.patreon.com/bePatron?c=1567892
@@ -25501,11 +25501,12 @@ function (_VsComponent) {
           }); // cardsI.scrollTo(cardsI.scrollLeft - cardsI.clientWidth, 0)
 
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
-            cardsI.scrollLeft = Math.abs(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth);
-            console.log('SignedCard for < below.');
+            // cardsI.scrollLeft = Math.abs(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth)
+            cardsI.scrollLeft = -(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth);
+            /* console.log('SignedCard for < below.');
             console.log('Operation: |' + cardsI.offsetWidth + " - " + signedCard.offsetLeft + " - " + signedCard.offsetWidth);
             console.log(signedCard);
-            console.dir(signedCard);
+            console.dir(signedCard); */
           } else {
             console.log('No se encontraron más tarjetas en paso <');
           }
@@ -25536,10 +25537,10 @@ function (_VsComponent) {
 
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
             cardsI.scrollLeft = signedCard.offsetLeft;
-            console.log('SignedCard for > below.');
+            /* console.log('SignedCard for > below.');
             console.log('Operation: ' + signedCard.offsetLeft);
             console.log(signedCard);
-            console.dir(signedCard);
+            console.dir(signedCard); */
           } else {
             console.log('No se encontraron más tarjetas en paso >');
           }
