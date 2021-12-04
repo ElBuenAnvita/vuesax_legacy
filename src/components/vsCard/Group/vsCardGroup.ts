@@ -41,7 +41,9 @@ export default class VsCardGroup extends VsComponent {
           // cardsI.scrollTo(cardsI.scrollLeft - cardsI.clientWidth, 0)
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
             cardsI.scrollLeft = Math.abs(cardsI.offsetWidth - signedCard.offsetLeft - signedCard.offsetWidth)
-            console.log('SignedCard for > below.');
+            console.log('SignedCard for < below.');
+            console.log('Operation: |' + cardsI.offsetWidth + " - " + signedCard.offsetLeft + " - " + signedCard.offsetWidth);
+            console.log(signedCard);
             console.dir(signedCard);
           } else {
             console.log('No se encontraron más tarjetas en paso <')
@@ -77,6 +79,8 @@ export default class VsCardGroup extends VsComponent {
           if (!(signedCard === null || signedCard.offsetLeft === null)) {
             cardsI.scrollLeft = signedCard.offsetLeft;
             console.log('SignedCard for > below.');
+            console.log('Operation: ' + signedCard.offsetLeft);
+            console.log(signedCard);
             console.dir(signedCard);
           } else {
             console.log('No se encontraron más tarjetas en paso >')
