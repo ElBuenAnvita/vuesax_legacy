@@ -46,9 +46,9 @@ export default class VsCardGroup extends VsComponent {
             console.log('Operation: |' + cardsI.offsetWidth + " - " + signedCard.offsetLeft + " - " + signedCard.offsetWidth);
             console.log(signedCard);
             console.dir(signedCard); */
-          } else {
+          } /* else {
             console.log('No se encontraron más tarjetas en paso <')
-          }
+          } */
         }
       }
     }, [
@@ -83,9 +83,9 @@ export default class VsCardGroup extends VsComponent {
             console.log('Operation: ' + signedCard.offsetLeft);
             console.log(signedCard);
             console.dir(signedCard); */
-          } else {
+          } /* else {
             console.log('No se encontraron más tarjetas en paso >')
-          }
+          } */
         }
       }
     }, [
