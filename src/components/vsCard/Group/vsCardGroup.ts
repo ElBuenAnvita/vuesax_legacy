@@ -82,10 +82,8 @@ export default class VsCardGroup extends VsComponent {
             /* console.log('SignedCard for > below.');
             console.log('Operation: ' + signedCard.offsetLeft);
             console.log(signedCard);
-            console.dir(signedCard); */
-          } /* else {
-            console.log('No se encontraron más tarjetas en paso >')
-          } */
+            console.dir(signedCard) */
+          }
         }
       }
     }, [
