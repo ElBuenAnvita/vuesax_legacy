@@ -1,6 +1,6 @@
 {
   "name": "@elbuenanvita/vuesax",
-  "version": "4.0.2-alpha-e.1",
+  "version": "4.0.2-alpha-e.2",
   "description": "Framework components for vuejs",
   "main": "dist/vuesax.js",
   "scripts": {

@@ -1,5 +1,5 @@
 /*!
-  * Vuesax v4.0.2-alpha-e.1 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Vuesax v4.0.2-alpha-e.2 🖖 (https://lusaxweb.github.io/vuesax/)
   * Forged by Luis Daniel Rovira, edited by ElBuenAnvita
   * Released under the MIT License.
   * Donate to Luis Daniel Rovira: https://www.patreon.com/bePatron?c=1567892
@@ -25541,12 +25541,8 @@ function (_VsComponent) {
             /* console.log('SignedCard for > below.');
             console.log('Operation: ' + signedCard.offsetLeft);
             console.log(signedCard);
-            console.dir(signedCard); */
+            console.dir(signedCard) */
           }
-          /* else {
-          console.log('No se encontraron más tarjetas en paso >')
-          } */
-
         }
       }
     }, [h(arrow_VsIconClose)]);
